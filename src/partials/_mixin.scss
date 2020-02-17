@@ -3,3 +3,11 @@
   justify-content: space-between;
   align-items: center;
 }
+@mixin display-flex-align-center {
+  display: flex;
+}
+@mixin login-button {
+  padding: 7px 17px;
+  border: 1px solid #30488f;
+  border-radius: 10px;
+}
