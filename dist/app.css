@@ -22,12 +22,12 @@ a {
 .container {
   width: 85%;
   margin: auto;
-}
-
-.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar {
   position: fixed;
   top: 0;
   left: 0;

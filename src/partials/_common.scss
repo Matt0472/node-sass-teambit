@@ -21,9 +21,9 @@ a {
 .container {
   width: 85%;
   margin: auto;
+  @include display-flex-between;
 }
 .navbar {
-  @include display-flex-between;
   position: fixed;
   top: 0;
   left: 0;
