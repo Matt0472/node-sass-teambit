@@ -1,3 +1,4 @@
+// NAVBAR
 .navbar {
   @include display-flex-between;
   width: $widthInner;
@@ -7,12 +8,9 @@
   border-bottom: 1px solid #DEDAD7;
 }
 
-.nav_left,
-.nav_right {
-  display: flex;
-}
 .nav_left {
   img {
+    margin-left: 40px;
     margin-right: $marginRight15;
   }
   h2 {
@@ -28,6 +26,7 @@
     a {
       color: $primarycolor;
       font-weight: bold;
+      font-size: 13px;
     }
     .login_btn img {
       width: 20px;
@@ -40,6 +39,7 @@
     }
     .hamburger_menu {
       display: block;
+      margin-right: $marginRight40;
     }
   }
 }
@@ -47,7 +47,61 @@
   @include login-button;
   @include display-flex-align-center;
 }
+// fine navbar
+
+// JUMBOTRON
 .jumbotron {
-  height: 600px;
-  background-color: yellow;
+  width: $widthInner;
+  margin: 70px auto;
+  .title_wrapper {
+    width: calc(100% / 2);
+    padding: 35px;
+    h1 {
+      font-size: 45px;
+      line-height: 65px;
+      font-weight: normal;
+    }
+    p {
+      font-size: 20px;
+      margin: 40px 0;
+    }
+    .sign_up_btn {
+      @include login-button;
+      font-size: 13px;
+      vertical-align: middle;
+      img {
+        width: 20px;
+        vertical-align: middle;
+        margin-bottom: 2px;
+        &.slack_img {
+          width: 18px;
+        }
+      }
+    }
+    span {
+      margin: 0 10px;
+    }
+    .sign_up_email {
+      margin-top: 20px;
+      display: block;
+      line-height: 20px;
+      i {
+        vertical-align: middle;
+        line-height: 20px;
+      }
+    }
+  }
+  .jumbo_wrapper {
+    width: calc(100% / 2);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+@media screen and (max-width: 1100px) {
+  .jumbotron {
+    flex-wrap: wrap;
+  }
 }

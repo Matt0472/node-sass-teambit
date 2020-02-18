@@ -1,18 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);* {
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #4E3D1E;
-}
-
-@font-face {
-  font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
-  src: local("HarmoniaSansProCyr-Regular"), url("https://teambit.io/wp-content/themes/teambeat/fonts/HarmoniaSansProCyr-Regular_gdi.woff") format("woff");
 }
 
 ul {
@@ -23,6 +18,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.flex {
+  display: flex;
 }
 
 .navbar {
@@ -36,12 +35,8 @@ a {
   border-bottom: 1px solid #DEDAD7;
 }
 
-.nav_left,
-.nav_right {
-  display: flex;
-}
-
 .nav_left img {
+  margin-left: 40px;
   margin-right: 15px;
 }
 
@@ -60,6 +55,7 @@ a {
 .nav_right li a {
   color: #4E3D1E;
   font-weight: bold;
+  font-size: 13px;
 }
 
 .nav_right li .login_btn img {
@@ -74,6 +70,7 @@ a {
 
   .nav_right .hamburger_menu {
     display: block;
+    margin-right: 40px;
   }
 }
 
@@ -86,8 +83,72 @@ a {
 }
 
 .jumbotron {
-  height: 600px;
-  background-color: yellow;
+  width: 80%;
+  margin: 70px auto;
+}
+
+.jumbotron .title_wrapper {
+  width: calc(100% / 2);
+  padding: 35px;
+}
+
+.jumbotron .title_wrapper h1 {
+  font-size: 45px;
+  line-height: 65px;
+  font-weight: normal;
+}
+
+.jumbotron .title_wrapper p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.jumbotron .title_wrapper .sign_up_btn {
+  padding: 7px 10px;
+  border: 1px solid #30488f;
+  border-radius: 10px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.jumbotron .title_wrapper .sign_up_btn img {
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+
+.jumbotron .title_wrapper .sign_up_btn img.slack_img {
+  width: 18px;
+}
+
+.jumbotron .title_wrapper span {
+  margin: 0 10px;
+}
+
+.jumbotron .title_wrapper .sign_up_email {
+  margin-top: 20px;
+  display: block;
+  line-height: 20px;
+}
+
+.jumbotron .title_wrapper .sign_up_email i {
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.jumbotron .jumbo_wrapper {
+  width: calc(100% / 2);
+}
+
+.jumbotron .jumbo_wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .jumbotron {
+    flex-wrap: wrap;
+  }
 }
 
 main {
