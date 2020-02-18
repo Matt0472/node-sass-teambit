@@ -9,11 +9,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: red;
+  color: $textcolorbrown;
 }
 ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -25,31 +26,39 @@ a {
   width: 100%;
   height: 80px;
   z-index: 1030;
-  padding: 40px;
+  padding: 20px 120px;
   background-color: #fff;
   @include display-flex-between;
 }
 
 .nav_left,
 .nav_right {
-  @include display-flex-align-center;
+  display: flex;
 }
 .nav_left {
   img {
     margin-right: $marginRight;
   }
   h2 {
-    color: #4E3D1E;
     font-weight: lighter;
   }
 }
 .nav_right {
   li {
     margin-right: $marginRight;
+    a {
+      color: $textcolorbrown;
+      font-weight: bolder;
+    }
+    .login_btn img {
+      width: 20px;
+      margin-right: 5px;
+    }
   }
 }
 .login_btn {
   @include login-button;
+  @include display-flex-align-center;
 }
 .jumbotron {
   height: 600px;
