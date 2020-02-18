@@ -185,6 +185,10 @@ a {
   }
 }
 
+main {
+  background-color: #F3DCC8;
+}
+
 main section:not(:nth-child(2n)) {
   width: 80%;
   margin: auto;
@@ -193,12 +197,33 @@ main section:not(:nth-child(2n)) {
 
 main .section_top {
   text-align: center;
+  padding: 30px 50px;
+}
+
+main .section_top h2 {
+  font-size: 30px;
+}
+
+main .section_top_wrapper {
+  margin: 50px 0;
 }
 
 main .section_top_img_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+main .section_top_img_wrapper .img_item {
+  padding: 30px;
+}
+
+main .section_top_img_wrapper .img_item:not(:last-child) img {
+  height: 90px;
+}
+
+main .section_top_img_wrapper .img_item:last-child img {
+  height: 300px;
 }
 
 footer {

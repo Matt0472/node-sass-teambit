@@ -1,4 +1,5 @@
 main {
+  background-color: #F3DCC8;
   section:not(:nth-child(2n)) {
     width: $widthInner;
     margin: auto;
@@ -6,10 +7,26 @@ main {
   }
   .section_top {
     text-align: center;
+    padding: 30px 50px;
+    h2 {
+      font-size: 30px;
+    }
+    &_wrapper {
+      margin: 50px 0;
+    }
     &_img_wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      .img_item {
+        padding: 30px;
+      }
+      .img_item:not(:last-child) img {
+        height: 90px;
+      }
+      .img_item:last-child img {
+        height: 300px;
+      }
     }
   }
 }
