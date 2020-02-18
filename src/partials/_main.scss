@@ -1,8 +1,15 @@
 main {
-  background-color: purple;
-  height: 1000px;
-  section {
-    height: calc(100% / 3);
-    border: 1px solid blue;
+  section:not(:nth-child(2n)) {
+    width: $widthInner;
+    margin: auto;
+    background-color: #F3DCC8;
+  }
+  .section_top {
+    text-align: center;
+    &_img_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

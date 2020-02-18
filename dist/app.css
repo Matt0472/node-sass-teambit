@@ -185,14 +185,20 @@ a {
   }
 }
 
-main {
-  background-color: purple;
-  height: 1000px;
+main section:not(:nth-child(2n)) {
+  width: 80%;
+  margin: auto;
+  background-color: #F3DCC8;
 }
 
-main section {
-  height: calc(100% / 3);
-  border: 1px solid blue;
+main .section_top {
+  text-align: center;
+}
+
+main .section_top_img_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 footer {
