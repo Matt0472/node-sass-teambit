@@ -27,10 +27,21 @@
       color: $primarycolor;
       font-weight: bold;
       font-size: 13px;
+      &.login_btn {
+        color: #30488f;
+        &:hover {
+          background-color: #30488f;
+          color: #fff;
+        }
+      }
     }
-    .login_btn img {
-      width: 20px;
-      margin-right: 5px;
+    .login_btn {
+      @include login-button;
+      @include display-flex-align-center;
+      & img {
+        width: 20px;
+        margin-right: 5px;
+      }
     }
   }
   @media screen and (max-width: 850px) {
@@ -43,10 +54,7 @@
     }
   }
 }
-.login_btn {
-  @include login-button;
-  @include display-flex-align-center;
-}
+
 // fine navbar
 
 // JUMBOTRON
@@ -69,6 +77,11 @@
       @include login-button;
       font-size: 13px;
       vertical-align: middle;
+      background-color: #30488f;
+      color: #fff;
+      &:hover {
+        background-color: #233569;
+      }
       img {
         width: 20px;
         vertical-align: middle;
@@ -85,9 +98,14 @@
       margin-top: 20px;
       display: block;
       line-height: 20px;
+      color: $primarycolor;
       i {
         vertical-align: middle;
         line-height: 20px;
+        color: $primarycolor;
+      }
+      &:hover {
+        color: #233569;
       }
     }
   }

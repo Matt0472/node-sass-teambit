@@ -58,6 +58,23 @@ a {
   font-size: 13px;
 }
 
+.nav_right li a.login_btn {
+  color: #30488f;
+}
+
+.nav_right li a.login_btn:hover {
+  background-color: #30488f;
+  color: #fff;
+}
+
+.nav_right li .login_btn {
+  padding: 7px 10px;
+  border: 1px solid #30488f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
 .nav_right li .login_btn img {
   width: 20px;
   margin-right: 5px;
@@ -72,14 +89,6 @@ a {
     display: block;
     margin-right: 40px;
   }
-}
-
-.login_btn {
-  padding: 7px 10px;
-  border: 1px solid #30488f;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
 }
 
 .jumbotron {
@@ -109,6 +118,12 @@ a {
   border-radius: 10px;
   font-size: 13px;
   vertical-align: middle;
+  background-color: #30488f;
+  color: #fff;
+}
+
+.jumbotron .title_wrapper .sign_up_btn:hover {
+  background-color: #233569;
 }
 
 .jumbotron .title_wrapper .sign_up_btn img {
@@ -129,11 +144,17 @@ a {
   margin-top: 20px;
   display: block;
   line-height: 20px;
+  color: #4E3D1E;
 }
 
 .jumbotron .title_wrapper .sign_up_email i {
   vertical-align: middle;
   line-height: 20px;
+  color: #4E3D1E;
+}
+
+.jumbotron .title_wrapper .sign_up_email:hover {
+  color: #233569;
 }
 
 .jumbotron .jumbo_wrapper {
