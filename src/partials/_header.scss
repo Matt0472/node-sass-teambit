@@ -1,0 +1,53 @@
+.navbar {
+  @include display-flex-between;
+  width: $widthInner;
+  height: 80px;
+  margin: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #DEDAD7;
+}
+
+.nav_left,
+.nav_right {
+  display: flex;
+}
+.nav_left {
+  img {
+    margin-right: $marginRight15;
+  }
+  h2 {
+    font-weight: lighter;
+  }
+}
+.nav_right {
+  .hamburger_menu {
+    display: none;
+  }
+  li {
+    margin-right: $marginRight40;
+    a {
+      color: $primarycolor;
+      font-weight: bold;
+    }
+    .login_btn img {
+      width: 20px;
+      margin-right: 5px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .menu {
+      display: none;
+    }
+    .hamburger_menu {
+      display: block;
+    }
+  }
+}
+.login_btn {
+  @include login-button;
+  @include display-flex-align-center;
+}
+.jumbotron {
+  height: 600px;
+  background-color: yellow;
+}

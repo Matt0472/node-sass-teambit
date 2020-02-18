@@ -1,0 +1,8 @@
+main {
+  background-color: purple;
+  height: 1000px;
+  section {
+    height: calc(100% / 3);
+    border: 1px solid blue;
+  }
+}
