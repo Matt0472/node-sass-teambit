@@ -211,6 +211,18 @@ main .wrapper_80 .title_wrapper h2 {
   font-weight: lighter;
 }
 
+@media screen and (max-width: 480px) {
+  main .wrapper_80 .title_wrapper h2 {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main .wrapper_80 .title_wrapper {
+    width: 100%;
+  }
+}
+
 main .wrapper_80 .process {
   display: flex;
   justify-content: center;
@@ -228,6 +240,14 @@ main .wrapper_80 .process .img_small .title_wrapper {
 
 main .wrapper_80 .process .img_small img {
   height: 90px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 780px) {
+  main .wrapper_80 .process .img_small {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 main .wrapper_80 .process .img_medium {
@@ -235,7 +255,25 @@ main .wrapper_80 .process .img_medium {
 }
 
 main .wrapper_80 .process .img_medium img {
-  height: 330px;
+  height: 300px;
+}
+
+@media screen and (max-width: 480px) {
+  main .wrapper_80 .process .img_medium img {
+    height: 250px;
+  }
+}
+
+main .wrapper_80 .process .img_medium h3 {
+  font-size: 26px;
+  color: #4E3D1E;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  main .wrapper_80 {
+    padding: 0;
+  }
 }
 
 footer {

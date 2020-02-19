@@ -10,6 +10,12 @@ main {
       h2 {
         font-size: 26px;
         font-weight: lighter;
+        @media screen and (max-width: 480px){
+          padding-top: 50px;
+        }
+      }
+      @media screen and (max-width: 480px){
+        width: 100%;
       }
     }
     .process {
@@ -22,14 +28,30 @@ main {
         }
         img {
           height: 90px;
+          margin-bottom: 30px;
+        }
+        @media screen and (max-width: 780px){
+          width: 100%;
+          margin-bottom: 40px;
         }
       }
       .img_medium {
         padding: 30px;
         img {
-          height: 330px;
+          height: 300px;
+          @media screen and (max-width: 480px){
+            height: 250px;
+          }
+        }
+        h3 {
+          font-size: 26px;
+          color: $primarycolor;
+          margin-top: 50px;
         }
       }
+    }
+    @media screen and (max-width: 480px){
+      padding: 0;
     }
   }
 }
