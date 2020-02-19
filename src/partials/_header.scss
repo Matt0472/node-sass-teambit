@@ -29,9 +29,9 @@
       font-weight: bold;
       font-size: 13px;
       &.login_btn {
-        color: #30488f;
+        color: $secondColor;
         &:hover {
-          background-color: #30488f;
+          background-color: $secondColor;
           color: #fff;
         }
       }
@@ -76,7 +76,7 @@
       @include login-button;
       font-size: 13px;
       vertical-align: middle;
-      background-color: #30488f;
+      background-color: $secondColor;
       color: #fff;
       &:hover {
         background-color: #233569;

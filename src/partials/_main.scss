@@ -1,31 +1,34 @@
 main {
-  background-color: #F3DCC8;
-  section:not(:nth-child(2n)) {
-    width: $widthInner;
-    margin: auto;
-    background-color: #F3DCC8;
-  }
-  .section_top {
+  background-color: $thirdColor;
+  .wrapper_80 {
+    padding: 60px;
     text-align: center;
-    padding: 30px 50px;
-    h2 {
-      font-size: 30px;
+    border-bottom: 1px solid $borderColor;
+    .title_wrapper {
+      width: 70%;
+      margin: auto;
+      h2 {
+        font-size: 26px;
+        font-weight: lighter;
+      }
     }
-    &_wrapper {
-      margin: 50px 0;
-    }
-    &_img_wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      .img_item {
+    .process {
+      @include flex-center-wrap;
+      margin-top: 80px;
+      .img_small {
+        width: calc(100% / 3);
+        .title_wrapper {
+          width: 70%;
+        }
+        img {
+          height: 90px;
+        }
+      }
+      .img_medium {
         padding: 30px;
-      }
-      .img_item:not(:last-child) img {
-        height: 90px;
-      }
-      .img_item:last-child img {
-        height: 300px;
+        img {
+          height: 330px;
+        }
       }
     }
   }

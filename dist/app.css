@@ -8,6 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #4E3D1E;
+  min-width: 380px;
 }
 
 ul {
@@ -22,6 +23,11 @@ a {
 
 .flex {
   display: flex;
+}
+
+.wrapper_80 {
+  width: 80%;
+  margin: auto;
 }
 
 .navbar {
@@ -189,41 +195,47 @@ main {
   background-color: #F3DCC8;
 }
 
-main section:not(:nth-child(2n)) {
-  width: 80%;
-  margin: auto;
-  background-color: #F3DCC8;
-}
-
-main .section_top {
+main .wrapper_80 {
+  padding: 60px;
   text-align: center;
-  padding: 30px 50px;
+  border-bottom: 1px solid #C5BBB3;
 }
 
-main .section_top h2 {
-  font-size: 30px;
+main .wrapper_80 .title_wrapper {
+  width: 70%;
+  margin: auto;
 }
 
-main .section_top_wrapper {
-  margin: 50px 0;
+main .wrapper_80 .title_wrapper h2 {
+  font-size: 26px;
+  font-weight: lighter;
 }
 
-main .section_top_img_wrapper {
+main .wrapper_80 .process {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
 }
 
-main .section_top_img_wrapper .img_item {
-  padding: 30px;
+main .wrapper_80 .process .img_small {
+  width: calc(100% / 3);
 }
 
-main .section_top_img_wrapper .img_item:not(:last-child) img {
+main .wrapper_80 .process .img_small .title_wrapper {
+  width: 70%;
+}
+
+main .wrapper_80 .process .img_small img {
   height: 90px;
 }
 
-main .section_top_img_wrapper .img_item:last-child img {
-  height: 300px;
+main .wrapper_80 .process .img_medium {
+  padding: 30px;
+}
+
+main .wrapper_80 .process .img_medium img {
+  height: 330px;
 }
 
 footer {
