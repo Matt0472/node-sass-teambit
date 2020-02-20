@@ -15,11 +15,11 @@ main {
     h2 {
       font-size: $titleFontSize;
       font-weight: lighter;
-      @media screen and (max-width: $xsmallScreen){
+      @media screen and (max-width: $xxsmallScreen){
         padding-top: $paddingTop50;
       }
     }
-    @media screen and (max-width: $xsmallScreen){
+    @media screen and (max-width: $xxsmallScreen){
       width: 100%;
     }
   }
@@ -44,7 +44,7 @@ main {
       padding: $padding30;
       img {
         height: 300px;
-        @media screen and (max-width: $xsmallScreen){
+        @media screen and (max-width: $xxsmallScreen){
           height: 250px;
         }
       }
@@ -55,11 +55,20 @@ main {
       }
     }
   }
-  @media screen and (max-width: $xsmallScreen){
+  @media screen and (max-width: $xxsmallScreen){
     padding: 0;
   }
 }
 
 .teammates_feedback {
-
+  padding-top: $paddingTop100;
+  background-color: $fourthColor;
+  .col-left img {
+    height: 500px;
+  }
+  .col-right {
+    img {
+      height: 200px;
+    }
+  }
 }

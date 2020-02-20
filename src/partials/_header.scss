@@ -4,7 +4,7 @@
   width: $widthInner;
   height: 80px;
   margin: auto;
-  background-color: #fff;
+  background-color: $fourthColor;
   border-bottom: 1px solid #DEDAD7;
 }
 
@@ -27,12 +27,12 @@
     a {
       color: $primarycolor;
       font-weight: bold;
-      font-size: 13px;
+      font-size: $smallFontSize;
       &.login_btn {
         color: $secondColor;
         &:hover {
           background-color: $secondColor;
-          color: #fff;
+          color: $fourthColor;
         }
       }
     }
@@ -45,7 +45,7 @@
       }
     }
   }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: $moreMediumScreen) {
     .menu {
       display: none;
     }
@@ -69,15 +69,15 @@
       font-weight: normal;
     }
     p {
-      font-size: 20px;
+      font-size: $mediumFontSize;
       margin: 40px 0;
     }
     .sign_up_btn {
       @include login-button;
-      font-size: 13px;
+      font-size: $smallFontSize;
       vertical-align: middle;
       background-color: $secondColor;
-      color: #fff;
+      color: $fourthColor;
       &:hover {
         background-color: #233569;
       }
@@ -94,7 +94,7 @@
       margin: 0 10px;
     }
     .sign_up_email {
-      margin-top: 20px;
+      margin-top: $marginTop20;
       display: block;
       line-height: 20px;
       color: $primarycolor;
@@ -115,7 +115,7 @@
   }
 
 }
-@media screen and (max-width: 1257px) {
+@media screen and (max-width: $largeScreen) {
   .jumbotron {
     flex-wrap: wrap;
     .title_wrapper {
@@ -127,12 +127,12 @@
       text-align: center;
       & img {
         width: 100%;
-        margin-top: 50px;
+        margin-top: $marginTop50;
       }
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $xsmallScreen) {
   .sign_up_btn {
     display: block;
   }

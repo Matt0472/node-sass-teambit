@@ -37,7 +37,7 @@ a {
   width: 80%;
   height: 80px;
   margin: auto;
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid #DEDAD7;
 }
 
@@ -69,7 +69,7 @@ a {
 
 .nav_right li a.login_btn:hover {
   background-color: #30488f;
-  color: #fff;
+  color: #ffffff;
 }
 
 .nav_right li .login_btn {
@@ -122,7 +122,7 @@ a {
   font-size: 13px;
   vertical-align: middle;
   background-color: #30488f;
-  color: #fff;
+  color: #ffffff;
 }
 
 .jumbotron .title_wrapper .sign_up_btn:hover {
@@ -278,6 +278,19 @@ main {
   .wrapper_80 {
     padding: 0;
   }
+}
+
+.teammates_feedback {
+  padding-top: 100px;
+  background-color: #ffffff;
+}
+
+.teammates_feedback .col-left img {
+  height: 500px;
+}
+
+.teammates_feedback .col-right img {
+  height: 200px;
 }
 
 footer {

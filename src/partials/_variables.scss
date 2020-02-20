@@ -1,13 +1,16 @@
 // size
 $marginRight15: 15px;
 $marginRight40: 40px;
+$marginTop20: 20px;
 $marginTop50: 50px;
 $marginTop80: 80px;
 $marginBottom30: 30px;
 $marginBottom40: 40px;
+
 $padding30: 30px;
 $padding60: 60px;
 $paddingTop50: 50px;
+$paddingTop100: 100px;
 
 $widthInner: 80%;
 
@@ -15,14 +18,18 @@ $widthInner: 80%;
 $primarycolor: #4E3D1E;
 $secondColor: #30488f;
 $thirdColor: #F3DCC8;
+$fourthColor: #ffffff;
 $borderColor: #C5BBB3;
 
 
 // typography
 $titleFontSize: 26px;
-
-
+$smallFontSize: 13px;
+$mediumFontSize: 20px;
 
 // breakpoint size
-$xsmallScreen: 480px;
+$xxsmallScreen: 480px;
+$xsmallScreen: 500px;
 $mediumScreen: 780px;
+$moreMediumScreen: 850px;
+$largeScreen: 1257px;
