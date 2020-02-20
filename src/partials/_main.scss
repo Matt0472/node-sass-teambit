@@ -67,8 +67,26 @@ main {
     height: 500px;
   }
   .col-right {
-    img {
-      height: 200px;
+    .rules_wrapper{
+      @include flex-column;
+      width: 70%;
+      h2 {
+        font-size: $titleFontSize;
+        line-height: 40px;
+      }
+      p {
+        margin: 25px 0 40px 0;
+        padding-right: 40px;
+        font-size: $mediumFontSize;
+        line-height: 30px;
+      }
+      a {
+        font-size: $mediumFontSize;
+        margin-bottom: $marginBottom50;
+      }
+      img {
+        width: 300px;
+      }
     }
   }
 }

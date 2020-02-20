@@ -289,8 +289,31 @@ main {
   height: 500px;
 }
 
-.teammates_feedback .col-right img {
-  height: 200px;
+.teammates_feedback .col-right .rules_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.teammates_feedback .col-right .rules_wrapper h2 {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.teammates_feedback .col-right .rules_wrapper p {
+  margin: 25px 0 40px 0;
+  padding-right: 40px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.teammates_feedback .col-right .rules_wrapper a {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.teammates_feedback .col-right .rules_wrapper img {
+  width: 300px;
 }
 
 footer {
