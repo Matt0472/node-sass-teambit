@@ -1,57 +1,65 @@
 main {
   background-color: $thirdColor;
-  .wrapper_80 {
-    padding: 60px;
-    text-align: center;
-    border-bottom: 1px solid $borderColor;
-    .title_wrapper {
-      width: 70%;
-      margin: auto;
-      h2 {
-        font-size: 26px;
-        font-weight: lighter;
-        @media screen and (max-width: 480px){
-          padding-top: 50px;
-        }
-      }
-      @media screen and (max-width: 480px){
-        width: 100%;
-      }
-    }
-    .process {
-      @include flex-center-wrap;
-      margin-top: 80px;
-      .img_small {
-        width: calc(100% / 3);
-        .title_wrapper {
-          width: 70%;
-        }
-        img {
-          height: 90px;
-          margin-bottom: 30px;
-        }
-        @media screen and (max-width: 780px){
-          width: 100%;
-          margin-bottom: 40px;
-        }
-      }
-      .img_medium {
-        padding: 30px;
-        img {
-          height: 300px;
-          @media screen and (max-width: 480px){
-            height: 250px;
-          }
-        }
-        h3 {
-          font-size: 26px;
-          color: $primarycolor;
-          margin-top: 50px;
-        }
+}
+
+.wrapper_80 {
+  padding: $padding60;
+  text-align: center;
+  border-bottom: 1px solid $borderColor;
+  &.no_border_bottom {
+    border-bottom: none;
+  }
+  .title_wrapper {
+    width: 70%;
+    margin: auto;
+    h2 {
+      font-size: $titleFontSize;
+      font-weight: lighter;
+      @media screen and (max-width: $xsmallScreen){
+        padding-top: $paddingTop50;
       }
     }
-    @media screen and (max-width: 480px){
-      padding: 0;
+    @media screen and (max-width: $xsmallScreen){
+      width: 100%;
     }
   }
+  .process {
+    @include flex-center-wrap;
+    margin-top: $marginTop80;
+    .img_small {
+      width: calc(100% / 3);
+      .title_wrapper {
+        width: 70%;
+      }
+      img {
+        height: 90px;
+        margin-bottom: $marginBottom30;
+      }
+      @media screen and (max-width: $mediumScreen){
+        width: 100%;
+        margin-bottom: $marginBottom40;
+      }
+    }
+    .img_medium {
+      padding: $padding30;
+      img {
+        height: 300px;
+        @media screen and (max-width: $xsmallScreen){
+          height: 250px;
+        }
+      }
+      h3 {
+        font-size: 26px;
+        color: $primarycolor;
+        margin-top: $marginTop50;
+      }
+    }
+  }
+  @media screen and (max-width: $xsmallScreen){
+    padding: 0;
+  }
+}
+
+.teammates_feedback {
+
 }
