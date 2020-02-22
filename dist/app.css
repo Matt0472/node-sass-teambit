@@ -292,14 +292,29 @@ main {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 950px) {
+  .teammates_feedback {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
 .teammates_feedback .col-left img {
-  height: 500px;
+  max-width: 100%;
+  margin-left: -15px;
 }
 
 .teammates_feedback .col-right .rules_wrapper {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
+}
+
+@media screen and (max-width: 950px) {
+  .teammates_feedback .col-right .rules_wrapper {
+    width: 70%;
+    margin: auto;
+  }
 }
 
 .teammates_feedback .col-right .rules_wrapper h2 {
@@ -309,7 +324,6 @@ main {
 
 .teammates_feedback .col-right .rules_wrapper p {
   margin: 25px 0 40px 0;
-  padding-right: 40px;
   font-size: 20px;
   line-height: 30px;
 }
@@ -320,7 +334,59 @@ main {
 }
 
 .teammates_feedback .col-right .rules_wrapper img {
-  width: 300px;
+  width: 260px;
+  margin: auto;
+}
+
+.teammates_feedback {
+  padding-top: 100px;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 950px) {
+  .teammates_feedback {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.teammates_feedback .col-left img {
+  max-width: 100%;
+  margin-left: -15px;
+}
+
+.teammates_feedback .col-right .rules_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+@media screen and (max-width: 950px) {
+  .teammates_feedback .col-right .rules_wrapper {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.teammates_feedback .col-right .rules_wrapper h2 {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.teammates_feedback .col-right .rules_wrapper p {
+  margin: 25px 0 40px 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.teammates_feedback .col-right .rules_wrapper a {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.teammates_feedback .col-right .rules_wrapper img {
+  width: 260px;
+  margin: auto;
 }
 
 footer {

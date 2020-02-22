@@ -67,20 +67,28 @@ main {
 .teammates_feedback {
   padding-top: $paddingTop100;
   background-color: $fourthColor;
+  @media screen and (max-width: $moreAndMoreMediumScreen){
+    flex-wrap: wrap;
+    text-align: center;
+  }
   .col-left img {
-    height: 500px;
+    max-width: 100%;
+    margin-left: -15px;
   }
   .col-right {
-    .rules_wrapper{
+    .rules_wrapper {
       @include flex-column;
-      width: 70%;
+      width: $widthInner;
+      @media screen and (max-width: $moreAndMoreMediumScreen){
+        width: 70%;
+        margin: auto;
+      }
       h2 {
         font-size: $titleFontSize;
         line-height: 40px;
       }
       p {
         margin: 25px 0 40px 0;
-        padding-right: 40px;
         font-size: $mediumFontSize;
         line-height: 30px;
       }
@@ -89,7 +97,47 @@ main {
         margin-bottom: $marginBottom50;
       }
       img {
-        width: 300px;
+        width: 260px;
+        margin: auto;
+      }
+    }
+  }
+}
+.teammates_feedback {
+  padding-top: $paddingTop100;
+  background-color: $fourthColor;
+  @media screen and (max-width: $moreAndMoreMediumScreen){
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .col-left img {
+    max-width: 100%;
+    margin-left: -15px;
+  }
+  .col-right {
+    .rules_wrapper {
+      @include flex-column;
+      width: $widthInner;
+      @media screen and (max-width: $moreAndMoreMediumScreen){
+        width: 70%;
+        margin: auto;
+      }
+      h2 {
+        font-size: $titleFontSize;
+        line-height: 40px;
+      }
+      p {
+        margin: 25px 0 40px 0;
+        font-size: $mediumFontSize;
+        line-height: 30px;
+      }
+      a {
+        font-size: $mediumFontSize;
+        margin-bottom: $marginBottom50;
+      }
+      img {
+        width: 260px;
+        margin: auto;
       }
     }
   }
