@@ -292,7 +292,7 @@ main {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 990px) {
   .teammates_feedback {
     flex-wrap: wrap;
     text-align: center;
@@ -300,19 +300,22 @@ main {
 }
 
 .teammates_feedback .col-left img {
-  max-width: 100%;
+  max-width: 90%;
   margin-left: -15px;
+}
+
+.teammates_feedback .col-right {
+  margin-left: -80px;
 }
 
 .teammates_feedback .col-right .rules_wrapper {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 990px) {
   .teammates_feedback .col-right .rules_wrapper {
-    width: 70%;
     margin: auto;
   }
 }
@@ -338,55 +341,14 @@ main {
   margin: auto;
 }
 
-.teammates_feedback {
+.surveys {
   padding-top: 100px;
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 950px) {
-  .teammates_feedback {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-}
-
-.teammates_feedback .col-left img {
-  max-width: 100%;
-  margin-left: -15px;
-}
-
-.teammates_feedback .col-right .rules_wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-}
-
-@media screen and (max-width: 950px) {
-  .teammates_feedback .col-right .rules_wrapper {
-    width: 70%;
-    margin: auto;
-  }
-}
-
-.teammates_feedback .col-right .rules_wrapper h2 {
-  font-size: 26px;
-  line-height: 40px;
-}
-
-.teammates_feedback .col-right .rules_wrapper p {
-  margin: 25px 0 40px 0;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.teammates_feedback .col-right .rules_wrapper a {
-  font-size: 20px;
-  margin-bottom: 50px;
-}
-
-.teammates_feedback .col-right .rules_wrapper img {
-  width: 260px;
-  margin: auto;
+.surveys .col-right img {
+  max-width: 80%;
+  margin-right: -15px;
 }
 
 footer {

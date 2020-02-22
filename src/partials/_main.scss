@@ -72,15 +72,15 @@ main {
     text-align: center;
   }
   .col-left img {
-    max-width: 100%;
+    max-width: 90%;
     margin-left: -15px;
   }
   .col-right {
+    margin-left: -80px;
     .rules_wrapper {
       @include flex-column;
-      width: $widthInner;
+      width: 70%;
       @media screen and (max-width: $moreAndMoreMediumScreen){
-        width: 70%;
         margin: auto;
       }
       h2 {
@@ -103,42 +103,11 @@ main {
     }
   }
 }
-.teammates_feedback {
-  padding-top: $paddingTop100;
-  background-color: $fourthColor;
-  @media screen and (max-width: $moreAndMoreMediumScreen){
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .col-left img {
-    max-width: 100%;
-    margin-left: -15px;
-  }
-  .col-right {
-    .rules_wrapper {
-      @include flex-column;
-      width: $widthInner;
-      @media screen and (max-width: $moreAndMoreMediumScreen){
-        width: 70%;
-        margin: auto;
-      }
-      h2 {
-        font-size: $titleFontSize;
-        line-height: 40px;
-      }
-      p {
-        margin: 25px 0 40px 0;
-        font-size: $mediumFontSize;
-        line-height: 30px;
-      }
-      a {
-        font-size: $mediumFontSize;
-        margin-bottom: $marginBottom50;
-      }
-      img {
-        width: 260px;
-        margin: auto;
-      }
+.surveys {
+    padding-top: $paddingTop100;
+    background-color: $fourthColor;
+    .col-right img {
+      max-width: 80%;
+      margin-right: -15px;
     }
-  }
 }
