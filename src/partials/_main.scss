@@ -42,6 +42,10 @@ main {
     }
     .img_medium {
       padding: $padding30;
+      margin-top: $marginTop100;
+      @media screen and (max-width: $mediumScreen){
+        margin-top: $marginTop100 / 2;
+      }
       img {
         height: 300px;
         @media screen and (max-width: $xxsmallScreen){
