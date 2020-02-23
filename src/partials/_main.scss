@@ -106,8 +106,40 @@ main {
 .surveys {
     padding-top: $paddingTop100;
     background-color: $fourthColor;
-    .col-right img {
-      max-width: 80%;
-      margin-right: -15px;
+    @media screen and (max-width: $moreAndMoreMediumScreen){
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .col-right {
+      width: 60%;
+      & img {
+        max-width: 100%;
+        margin-right: -15px;
+      }
+    }
+    .col-left {
+      width: 40%;
+      margin-left: 15%;
+      text-align: center;
+      h2 {
+        font-size: $titleFontSize;
+        text-align: left;
+      }
+      a {
+        display: block;
+        font-size: $mediumFontSize;
+        margin-bottom: $marginBottom50;
+        text-align: left;
+      }
+      p {
+        margin: 25px 0 40px 0;
+        font-size: $mediumFontSize;
+        line-height: 30px;
+        text-align: left;
+      }
+      img {
+        height: 260px;
+        margin: auto;
+      }
     }
 }

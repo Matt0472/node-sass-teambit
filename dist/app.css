@@ -346,9 +346,50 @@ main {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 990px) {
+  .surveys {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.surveys .col-right {
+  width: 60%;
+}
+
 .surveys .col-right img {
-  max-width: 80%;
+  max-width: 100%;
   margin-right: -15px;
+}
+
+.surveys .col-left {
+  width: 40%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.surveys .col-left h2 {
+  font-size: 26px;
+  text-align: left;
+}
+
+.surveys .col-left a {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.surveys .col-left p {
+  margin: 25px 0 40px 0;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.surveys .col-left img {
+  height: 260px;
+  margin: auto;
 }
 
 footer {
